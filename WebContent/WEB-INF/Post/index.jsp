@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>My Posts>
 </head>
 <body>
-
+<h1>My posts</h1>
 </body>
 </html>
