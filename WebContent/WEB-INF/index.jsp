@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Welcome to my blog</title>
 </head>
 <body>
-
+<p><h1>Welcome to my Java JEE blog!</h1></p>
 </body>
 </html>
