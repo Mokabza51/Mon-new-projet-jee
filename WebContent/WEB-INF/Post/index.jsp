@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My Posts>
+<title>My Posts></title>
 </head>
 <body>
 <h1>My posts</h1>
