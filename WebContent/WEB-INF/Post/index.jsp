@@ -1,6 +1,7 @@
-<%@page import="posts.Post"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="com.projet.posts.Post"%>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +11,9 @@
 <body>
 <h1>My posts</h1>
 <ul>
-	<% Post post = (Post) request.getAttribute("post"); %>
-	<li><a href="?id=<%= post.getId() %>"><%= post.getTitle() %></a></li>
+	<% for(Post post : (List<Post>)request.getAttribute("posts")) { %>
+		<li><a href="?id=<%= post.getId() %>"><%= post.getTitle() %></a></li>
+	<% } %>
 </ul>
 </body>
 </html>
