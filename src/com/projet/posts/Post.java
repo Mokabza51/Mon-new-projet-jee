@@ -1,4 +1,4 @@
-package com.projet;
+package com.projet.posts;
 
 public class Post {
 

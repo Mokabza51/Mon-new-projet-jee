@@ -1,4 +1,4 @@
-package com.projet;
+package com.projet.posts;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -27,7 +27,10 @@ public class PostServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+		var post = new Post(1, "lorem ipsum", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+		request.setAttribute("post", post);
+		
+		this.getServletContext().getRequestDispatcher("/WEB-INF/posts/index.jsp").forward(request, response);
 	}
 
 }
